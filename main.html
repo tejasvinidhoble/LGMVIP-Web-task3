@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <div class="container_left">
+        <div class="form">
+            <h1>Registration Form</h1>
+            <form>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+                </div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+
+                <label for="date_of_birth">Date Of Birth:</label>
+                <input type="date" id="date_of_birth" name="date_of_birth" required><br><br>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+				<option value="">Select your gender</option>
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+				<option value="other">Other</option>
+			</select>
+
+                <label for="website">Website:</label>
+                <input type="text" id="website" name="website" placeholder="https://www.example.com"><br><br>
+
+                <label for="photo">Photo: </label>
+                <input type="file" id="photo" name="photo" accept="image/*"><br><br>
+                <img id="preview" src="#" alt="Preview" style="display:none; max-width:200px;"><br><br>
+
+                <label for="skills">Skills:</label>
+                <input type="checkbox" id="html" class="checkbox">HTML
+                <input type="checkbox" id="css" class="checkbox">CSS
+                <input type="checkbox" id="javascript" class="checkbox">Javascript<br><br>
+                <div class="button">
+                    <button type="submit" id="Submit">Enroll student</button>
+                    <button type="reset" id="reset">Clear</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="container_right">
+        <h2>Enrolled Students</h2>
+        <div class="cardContainer" id="cardContainer">
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
